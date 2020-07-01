@@ -1,0 +1,22 @@
+React app structure
+
+index.html has the <div id="root">
+
+Plain javascript object:
+const element = <h1 className="App-title">Welcome</h1>
+
+Components are made up off elements:
+class App extends Component{}
+
+App.jS 
+index.js - importe the ./App.js component
+
+How to render view to DOM:
+index.js:
+ReactDOM.render(root)
+index.html:
+has the <div id="root">
+App.js:
+Is the component rendered in the the root div
+
+
