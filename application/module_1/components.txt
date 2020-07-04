@@ -1,0 +1,31 @@
+Components:
+
+Unit that returns a group of react elements
+that renders on the screen
+
+This lets you split UI into independent 
+reusable pieces
+
+Start name with Capital letter
+
+
+1. Create a new js file under src/components with the Component name
+2. Import React Component
+3. class Component extends Component{}
+4. add contructor(props)
+5. add render method with its return() which is the part that is the UI returned by the component
+6. export component to be used: export default Component
+7. add state to the constructor : data variables as json. state has properties which are the data variables
+
+Map operator:
+this.state.dishes.map((dish) => {
+            return (
+
+its like a for each dish in the dishes array return this UI
+remember to use a key={dish.id} in the outermost <div> to identify each Menu Item with a unique IDs
+
+
+Reactstrap:
+Media
+Card
+

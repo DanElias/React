@@ -1,0 +1,30 @@
+Only class components can store state
+
+The parent component has the data or props to be sed by serveral components
+To use this you use a shared folder to share this info among components
+then you import it to the parent component
+
+So the constructor props of the child
+inherits the props defined in the state of the parent
+
+Example
+
+App.js:
+-------------------------------------------
+import { DISHES } from './shared/dishes';
+...
+this.state = {
+      dishes: DISHES
+    };
+...
+<Menu dishes={this.state.dishes}/>
+-------------------------------------------
+So you import the shared data
+Then define it in the parents state
+Then to share it as a prop to the child, add the variable to the 
+child component's tag
+
+To access the prop in the child:
+    this.props.dishes
+
+State is important! and can change what is displayed in real time!!!

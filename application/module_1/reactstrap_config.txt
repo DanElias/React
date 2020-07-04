@@ -1,0 +1,9 @@
+yarn add bootstrap@4.0.0
+
+yarn add reactstrap@5.0.0 react-popper@0.9.2
+
+in index.js:
+    import 'bootstrap/dist/css/bootstrap.min.css';
+
+Add components in App.js
+    import { Navbar, NavbarBrand } from 'reactstrap';

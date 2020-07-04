@@ -1,0 +1,30 @@
+
+const element = <h1>Hello!</h1>
+HTML code is embeded in javascript code
+
+JSX
+Syntactic extension to javascript
+Notation to represent JS function calls 
+that evaluate to JS objects
+Avoids artificial separation of rendering logic
+from other UI logic
+UI and Rendering logic are seen in a single component
+Not like angular that has a separate view file
+
+JSX notation -> better
+const element = {
+    type: 'h1',
+    props: {
+        className: 'greeting',
+        children: 'Hello World!'
+    }
+};
+
+You can also embed js expression in jsx code
+const dish = {id: 0, name:"food",...}
+
+return (
+    <div key={dish.id} className="col-12 mt-5">
+)
+
+Therefore you can call a js object in the HTML jsx
