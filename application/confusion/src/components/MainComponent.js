@@ -19,7 +19,7 @@ class Main extends Component{
 
     render(){
         return (
-        <div className="App">
+        <div className="Main">
             <Navbar dark color="primary">
             <div className="container">
                 <NavbarBrand href="/">
@@ -27,8 +27,13 @@ class Main extends Component{
                 </NavbarBrand>
             </div>
             </Navbar>
+            {/*onClick se manda llamar cuando das click a un item en el MenuComponent*/}
+            {/*el dishId se manda desde el MenuComponent y luego este onClick a su vez manda a llamar a onDishSelect*/}
+            {/*Así logras que este MainComponent sea un Container component - maneja datos y cambios de estado*/}
             <Menu dishes={this.state.dishes} 
                 onClick={(dishId) => this.onDishSelect(dishId)}/>
+            {/*dish va a ser igual a el dish en la lista de Dishes que tenga el id del selected Dish*/}
+            {/*Así regresamos todo el objeto y no solo el id que es igual al selectedDish -> BD*/}
             <DishDetail 
                 dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
         </div>
